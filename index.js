@@ -1,7 +1,7 @@
 const cgHelper = require('./sii-cg-helper').SIICgHelper,
     CHARACTERS = require('./sii-cg-helper').CHARACTERS,
-    ACTIONS = require('./sii-cg-helper').ACTIONS
-GAME_STATUS = require('./sii-cg-helper').GAME_STATUS,
+    ACTIONS = require('./sii-cg-helper').ACTIONS,
+    GAME_STATUS = require('./sii-cg-helper').GAME_STATUS,
     debug = require('debug')('http');
 
 class IA {
@@ -100,7 +100,7 @@ class IA {
         /*
             MAKE YOUR IA HERE
 
-            EXEMPLE: This Code use the HIT attack only and catch http error from the server
+            EXAMPLE: This Code use the HIT attack only and catch http error from the server
          */
         cgHelper.makeActionWithCoolDown(this.gameToken, this.playerKey, ACTIONS.HIT)
             .then(() => this.makeAction())
@@ -129,7 +129,6 @@ class IA {
                             debug(error);
                         }
                     }
-
                 }
             });
     }

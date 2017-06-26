@@ -290,7 +290,7 @@ class SIICgHelper {
     }
 
     /**
-     * Waik X milliseconds
+     * Wait X milliseconds
      * @param {number} time Waiting time in milliseconds
      */
     wait(time, ...params) {
